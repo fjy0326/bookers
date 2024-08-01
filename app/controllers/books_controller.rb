@@ -35,7 +35,7 @@ class BooksController < ApplicationController
     flash[:notice] = "Book was successfully updated."
     redirect_to book_path(@book.id)
     else
-    flash[:alert] = "Failed to u$ git commit -m "Initial Commit"pdate the book."
+    flash[:alert] = "Failed to update the book."
     render :edit
    end
   end
